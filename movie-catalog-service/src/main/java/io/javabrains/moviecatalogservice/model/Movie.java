@@ -2,29 +2,49 @@ package io.javabrains.moviecatalogservice.model;
 
 public class Movie {
 
-    private String movieId;
-    private String name;
+    private String id;
+    private String title;
+    private String overview;
+    private String release_date;
 
-    private Movie() {}
+    public Movie() {}
 
-    public Movie(String movieId, String name) {
-        this.movieId = movieId;
-        this.name = name;
+    public Movie(String id, String title, String overview, String release_date) {
+        this.id = id;
+        this.title = title;
+        this.overview = overview;
+        this.release_date = release_date;
     }
 
-    public String getMovieId() {
-        return movieId;
+    public String getId() {
+        return id;
     }
 
-    public void setMovieId(String movieId) {
-        this.movieId = movieId;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getOverview() {
+        return overview;
+    }
+
+    public void setOverview(String overview) {
+        this.overview = overview;
+    }
+
+    public String getRelease_date() {
+        return release_date;
+    }
+
+    public void setRelease_date(String release_date) {
+        this.release_date = release_date;
     }
 }
